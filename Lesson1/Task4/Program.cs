@@ -6,30 +6,22 @@
 }
 
 int number = Prompt("Введите число: ");
-int counter = 1;
+int counter = 2;
 
-if (number <= counter)
+if (number < counter)
 {
-    while (number <= counter) number = Prompt("Число долно быть больше 1: ");
+    while (number < counter) number = Prompt("Число долно быть больше 1: ");
     while (counter <= number)
-    {
-        if (counter % 2 == 0)
-        {
-            Console.Write($"{counter} ");
-            counter++;
-        }
-        else counter++;
+    { 
+        Console.Write($"{counter} ");
+        counter += 2;
     }
 }
 else
 {
     while (counter <= number)
-    {
-        if (counter % 2 == 0)
-        {
-            Console.Write($"{counter} ");
-            counter++;
-        }
-        else counter++;
+    { 
+        Console.Write($"{counter} ");
+        counter += 2;
     }
 }
