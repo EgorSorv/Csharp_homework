@@ -8,20 +8,9 @@
 int number = Prompt("Введите число: ");
 int counter = 2;
 
-if (number < counter)
-{
-    while (number < counter) number = Prompt("Число долно быть больше 1: ");
-    while (counter <= number)
-    { 
-        Console.Write($"{counter} ");
-        counter += 2;
-    }
-}
-else
-{
-    while (counter <= number)
-    { 
-        Console.Write($"{counter} ");
-        counter += 2;
-    }
+while (number < counter) number = Prompt("Число долно быть больше 1: ");
+while (counter <= number)
+{ 
+    Console.Write($"{counter} ");
+    counter += 2;
 }
