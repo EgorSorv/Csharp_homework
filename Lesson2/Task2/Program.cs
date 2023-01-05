@@ -13,6 +13,7 @@
 
 int [] array = new int[3];
 FillArray(array);
+int number = array[0] * 10 + array[2];
 
 Console.WriteLine($"Сгенерировано число: {array[0]}{array[1]}{array[2]}");
-Console.WriteLine($"Преобразованное число: {array[0]}{array[2]}");
+Console.WriteLine($"Преобразованное число: {number}");
