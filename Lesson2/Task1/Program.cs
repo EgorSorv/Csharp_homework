@@ -6,6 +6,6 @@
 }
 
 int number = Prompt("Введите положительное трехзначное число: ");
-while (number.ToString().Length != 3 || number < 0) number = Prompt("Число должно быть положительным и трехзначным: ");
+while (number > 999 || number < 100) number = Prompt("Число должно быть положительным и трехзначным: ");
 
 Console.WriteLine($"Втора цифра числа {number} - {number / 10 % 10}");
