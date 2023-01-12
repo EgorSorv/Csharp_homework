@@ -22,6 +22,13 @@ int SumOfElementsInNumber(int number)
     return sum;
 }
 
-int num = Prompt("Введите число: ");
+int Absolute (int number)
+{
+    if (number < 0) number = -number;
+    return number;
+}
 
-WriteLine($" Сумма цифр в числе {num} => {SumOfElementsInNumber(num)}");
+int num = Prompt("Введите число: ");
+int number = Absolute(num);
+
+WriteLine($" Сумма цифр в числе {num} => {SumOfElementsInNumber(number)}");
