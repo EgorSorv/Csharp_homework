@@ -1,5 +1,4 @@
 ﻿using static System.Console;
-using static System.String;
 
 Clear();
 
